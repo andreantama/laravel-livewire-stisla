@@ -16,6 +16,10 @@ composer install
 ```bash
     yarn
 ```
+# Documentation
+- [Input](https://github.com/andreantama/laravel-livewire-stisla#input "Input")
+- - [Input Components](https://github.com/andreantama/laravel-livewire-stisla#--input-component "Input Components")
+- - [Button](https://github.com/andreantama/laravel-livewire-stisla#--button "Button")
 
 # Input
 ## - Input Component
