@@ -1,5 +1,5 @@
 <div>
-  <form method="POST" action="#" class="needs-validation" novalidate="">
+  <form wire:submit.prevent="authorize">
     @component('components.input.input')
         @slot('formclass', 'form-group')
         @slot('label', 'email')
@@ -18,10 +18,11 @@
         {{-- @slot('others')
         @endslot --}}
     @endcomponent
-
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-        Login
-      </button>
-    </div>
+    @component('components.input.button')
+        @slot('label', 'login')
+        @slot('is_submit', true)
+        @slot('classbtn', 'btn btn-primary btn-lg btn-block')
+        {{-- @slot('others')
+        @endslot --}}
+    @endcomponent
   </form>
