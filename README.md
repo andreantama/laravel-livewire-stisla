@@ -20,7 +20,7 @@ composer install
 - [Input](https://github.com/andreantama/laravel-livewire-stisla#input "Input")
 - - [Input Components](https://github.com/andreantama/laravel-livewire-stisla#--input-component "Input Components")
 - - [Button](https://github.com/andreantama/laravel-livewire-stisla#--button "Button")
-- [Toastr](https://github.com/andreantama/laravel-livewire-stisla#toastr "Toastr" "Toastr")
+- [Toastr](https://github.com/andreantama/laravel-livewire-stisla#toastr "Toastr")
 
 # Input
 ## - Input Component
