@@ -1,5 +1,5 @@
 <div>
-    <button class="btn btn-primary" wire:click="$emit('msg',  'as', 'asa', 'success')">Launch</button>
+ 
 </div>
 @push('js')
 <script>

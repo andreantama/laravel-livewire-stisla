@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/authorization/admin', function () {
     return view('admin._auth');
 });
+Route::get('/register/admin', function () {
+    return view('admin._register');
+});
 Route::group(['prefix' => 'admin/', 'as' => 'admin.', 'middleware' => 'admin'], function (){
 
 });

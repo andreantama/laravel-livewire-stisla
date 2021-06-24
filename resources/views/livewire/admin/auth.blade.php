@@ -1,5 +1,4 @@
 <div>
-<button class="btn btn-primary" wire:click="$emit('msgHandle',  'as', 'asa', 'success')">Launch</button>
 <form wire:submit.prevent="authorize">
     @component('components.input.input')
         @slot('formclass', 'form-group')
@@ -21,7 +20,7 @@
     @endcomponent
     @component('components.input.button')
         @slot('label')
-            <i class="far fa-edit"></i>
+            <i class="fas fa-sign-in-alt"></i>
             Login
         @endslot
         @slot('is_submit', true)
