@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/authorization/admin', function () {
+    return view('admin._auth');
+});
+Route::group(['prefix' => 'admin/', 'as' => 'admin.', 'middleware' => 'admin'], function (){
+
+});
 Route::get('/', function () {
     return view('welcome');
 });
