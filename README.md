@@ -27,7 +27,9 @@ You can call input with
         @slot('name', 'email')
         @slot('typeinput', 'text')
         @slot('typemodel', 'defer')
-@endcomponent
+        {{-- @slot('others')
+        @endslot --}}
+    @endcomponent
 ```
 With real settings in in views/components/input/input.blade.php
 ```php
@@ -45,6 +47,9 @@ With real settings in in views/components/input/input.blade.php
     @else
     wire:model="{{ $name }}"
     @endif
+    @if(isset($others))
+    {{ $others }}
+    @endif
   >
   @error($name)
   <div class="invalid-feedback">
@@ -52,5 +57,6 @@ With real settings in in views/components/input/input.blade.php
   </div>
    @enderror
 </div>
+
 
 ```

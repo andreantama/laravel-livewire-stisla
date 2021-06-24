@@ -12,6 +12,9 @@
     @else
     wire:model="{{ $name }}"
     @endif
+    @if(isset($others))
+    {{ $others }}
+    @endif
   >
   @error($name)
   <div class="invalid-feedback">
