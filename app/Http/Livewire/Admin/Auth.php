@@ -16,6 +16,14 @@ class Auth extends Component
     public function authorize()
     {
         $this->validate();
+        $this->emit('msg',  'Berhasil', 'Anda berhasil Masuk', 'success');
+        $this->reset();
+    }
+    public function dehydrate()
+    {
+        if(count($this->getErrorBag()->all()) > 0){
+            $this->emit('msg',  'Terjadi Kesalahan', 'Silahkan lengkapi semua form yang tersedia', 'error');
+        }
     }
     public function render()
     {

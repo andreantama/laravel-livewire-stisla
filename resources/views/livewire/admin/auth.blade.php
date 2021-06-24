@@ -1,5 +1,6 @@
 <div>
-  <form wire:submit.prevent="authorize">
+<button class="btn btn-primary" wire:click="$emit('msgHandle',  'as', 'asa', 'success')">Launch</button>
+<form wire:submit.prevent="authorize">
     @component('components.input.input')
         @slot('formclass', 'form-group')
         @slot('label', 'email')
@@ -19,7 +20,10 @@
         @endslot --}}
     @endcomponent
     @component('components.input.button')
-        @slot('label', 'login')
+        @slot('label')
+            <i class="far fa-edit"></i>
+            Login
+        @endslot
         @slot('is_submit', true)
         @slot('classbtn', 'btn btn-primary btn-lg btn-block')
         {{-- @slot('others')

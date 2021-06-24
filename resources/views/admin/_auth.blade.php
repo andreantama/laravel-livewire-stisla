@@ -11,14 +11,17 @@
 
   <!-- CSS Libraries -->
   <link rel="stylesheet" href="{{ asset('stisla/node_modules/bootstrap-social/bootstrap-social.css')}}">
+  <link rel="stylesheet" href="{{ asset('stisla/node_modules/izitoast/dist/css/iziToast.min.css')}}">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('stisla/assets/css/style.css')}}">
   <link rel="stylesheet" href="{{ asset('stisla/assets/css/components.css')}}">
+  @stack('style')
   @livewireStyles
 </head>
 
 <body>
+  @livewire('toastr')
   <div id="app">
     <section class="section">
       <div class="container mt-5">
@@ -56,10 +59,12 @@
   <script src="{{ asset('stisla/assets/js/stisla.js')}}"></script>
 
   <!-- JS Libraies -->
+  <script src="{{ asset('stisla/node_modules/izitoast/dist/js/iziToast.min.js') }}"></script>
 
   <!-- Template JS File -->
   <script src="{{ asset('stisla/assets/js/scripts.js')}}"></script>
   <script src="{{ asset('stisla/assets/js/custom.js')}}"></script>
+  @stack('js')
 
   <!-- Page Specific JS File -->
 </body>

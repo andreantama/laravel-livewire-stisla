@@ -20,6 +20,7 @@ composer install
 - [Input](https://github.com/andreantama/laravel-livewire-stisla#input "Input")
 - - [Input Components](https://github.com/andreantama/laravel-livewire-stisla#--input-component "Input Components")
 - - [Button](https://github.com/andreantama/laravel-livewire-stisla#--button "Button")
+- [Toastr](https://github.com/andreantama/laravel-livewire-stisla#toastr "Toastr" "Toastr")
 
 # Input
 ## - Input Component
@@ -68,4 +69,45 @@ Call component
         {{-- @slot('others')
         @endslot --}}
     @endcomponent
+```
+
+# Toastr
+Add this css file and js file on layout file
+```javascript
+<!-- JS Libraies -->
+  <script src="{{ asset('stisla/node_modules/izitoast/dist/js/iziToast.min.js') }}"></script>
+```
+```html
+<!-- CSS Libraries -->
+  <link rel="stylesheet" href="{{ asset('stisla/node_modules/izitoast/dist/css/iziToast.min.css')}}">
+```
+add livewire Toastr after body tag
+```html
+<body>
+  @livewire('toastr')
+```
+add stack css & js in layout file
+```html
+ @stack('style')
+  @livewireStyles
+</head>
+```
+```html
+  @stack('js')
+
+  <!-- Page Specific JS File -->
+</body>
+```
+after that u can access toastr in controller like this with parameter ['title', 'msg', 'status'] status have 4 kind like (success, error, warning, info)
+```php
+$this->emit('msg',  'Berhasil', 'Anda berhasil Masuk', 'success');
+
+```
+```php
+public function dehydrate()
+    {
+        if(count($this->getErrorBag()->all()) > 0){
+            $this->emit('msg',  'Terjadi Kesalahan', 'Silahkan lengkapi semua form yang tersedia', 'error');
+        }
+    }
 ```
