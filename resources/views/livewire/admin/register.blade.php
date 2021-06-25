@@ -1,5 +1,5 @@
 <div>
-  <form method="POST">
+  <form wire:submit.prevent="store">
     <div class="row">
         @component('components.input.input')
             @slot('formclass', 'form-group col-6')
@@ -28,24 +28,20 @@
                                   <div class="row">
                                     @component('components.input.input')
                                       @slot('formclass', 'form-group col-6')
-                                        @slot('label', 'Password')
-                                          @slot('name', 'password')
-                                            @slot('typeinput', 'password')
-                                              @slot('typemodel', 'defer')
-                                              @endcomponent
-                                              @component('components.input.input')
-                                                @slot('formclass', 'form-group col-6')
-                                                  @slot('label', 'Password Confirmation')
-                                                    @slot('name', 'repassword')
-                                                      @slot('typeinput', 'text')
-                                                        @slot('typemodel', 'defer')
-                                                        @endcomponent
-                                                      </div>
+                                      @slot('label', 'Password')
+                                      @slot('name', 'password')
+                                      @slot('typeinput', 'password')
+                                      @slot('typemodel', 'defer')
+                                    @endcomponent
+                                    @component('components.input.input')
+                                      @slot('formclass', 'form-group col-6')
+                                      @slot('label', 'Password Confirmation')
+                                      @slot('name', 'repassword')
+                                      @slot('typeinput', 'password')
+                                      @slot('typemodel', 'defer')
+                                    @endcomponent
+                                  </div>
 
-     <div class="form-divider">
-      {{ $country }}
-      {{ $country2 }}
-     </div>
      <div class="row">
      
         @component('components.input.select')
@@ -92,11 +88,16 @@
                                                         </div>
                                                       </div>
 
-                                                      <div class="form-group">
-                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">
-                                                          Register
-                                                        </button>
-                                                      </div>
+      @component('components.input.button')
+        @slot('label')
+            <i class="fas fa-sign-in-alt"></i>
+            Register
+        @endslot
+        @slot('is_submit', true)
+        @slot('classbtn', 'btn btn-primary btn-lg btn-block')
+        {{-- @slot('others')
+        @endslot --}}
+    @endcomponent
                                                     </form>
                                                   </div>
 @push('js')
