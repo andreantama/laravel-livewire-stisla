@@ -12,6 +12,21 @@
   <script src="{{ asset('stisla/node_modules/jquery-pwstrength/jquery.pwstrength.min.js') }}"></script>
   <script src="{{ asset('stisla/node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
   <script src="{{ asset('stisla/node_modules/select2/dist/js/select2.full.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/summernote/dist/summernote-bs4.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
+
+  <script src="{{ asset('stisla/node_modules/codemirror/lib/codemirror.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/codemirror/mode/javascript/javascript.js') }}"></script>
+
+  <script src="{{ asset('stisla/node_modules/cleave.js/dist/cleave.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/cleave.js/dist/addons/cleave-phone.us.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/jquery-pwstrength/jquery.pwstrength.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
+  
   
 
   <!-- Template JS File -->

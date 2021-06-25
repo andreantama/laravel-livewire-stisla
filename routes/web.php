@@ -19,8 +19,10 @@ Route::get('/authorization/admin', function () {
 Route::get('/register/admin', function () {
     return view('admin._register');
 })->name('auth.admin.register');
-Route::group(['prefix' => 'admin/', 'as' => 'admin.', 'middleware' => 'admin'], function (){
-
+Route::group(['prefix' => 'admin/', 'as' => 'admin.'], function (){
+    Route::get('/dashboard', function () {
+        return view('admin._dashboard');
+    });
 });
 Route::get('/', function () {
     return view('welcome');

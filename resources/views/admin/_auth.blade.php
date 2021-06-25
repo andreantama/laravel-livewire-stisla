@@ -1,4 +1,4 @@
-@extends('layouts.auth.template')
+@extends('layouts.stisla.auth.template')
 @section('title', 'Login')
 @section('content')
 <div class="row">

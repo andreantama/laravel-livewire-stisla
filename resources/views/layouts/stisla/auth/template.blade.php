@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  @include('layouts.auth.header')
+  @include('layouts.stisla.header')
 </head>
 
 <body>
@@ -13,6 +13,6 @@
       </div>
     </section>
   </div>
-@include('layouts.auth.footer')
+@include('layouts.stisla.footer')
 </body>
 </html>
