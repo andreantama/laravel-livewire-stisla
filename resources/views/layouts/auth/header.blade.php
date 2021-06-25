@@ -9,6 +9,8 @@
   <!-- CSS Libraries -->
   <link rel="stylesheet" href="{{ asset('stisla/node_modules/bootstrap-social/bootstrap-social.css')}}">
   <link rel="stylesheet" href="{{ asset('stisla/node_modules/izitoast/dist/css/iziToast.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('stisla/node_modules/selectric/public/selectric.css')}}">
+  <link rel="stylesheet" href="{{ asset('stisla/node_modules/select2/dist/css/select2.min.css')}}">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('stisla/assets/css/style.css')}}">

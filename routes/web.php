@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/authorization/admin', function () {
     return view('admin._auth');
-});
+})->name('auth.admin.login');
 Route::get('/register/admin', function () {
     return view('admin._register');
-});
+})->name('auth.admin.register');
 Route::group(['prefix' => 'admin/', 'as' => 'admin.', 'middleware' => 'admin'], function (){
 
 });

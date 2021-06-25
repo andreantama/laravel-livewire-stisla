@@ -9,10 +9,15 @@
 
   <!-- JS Libraies -->
   <script src="{{ asset('stisla/node_modules/izitoast/dist/js/iziToast.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/jquery-pwstrength/jquery.pwstrength.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
+  <script src="{{ asset('stisla/node_modules/select2/dist/js/select2.full.min.js') }}"></script>
+  
 
   <!-- Template JS File -->
   <script src="{{ asset('stisla/assets/js/scripts.js')}}"></script>
   <script src="{{ asset('stisla/assets/js/custom.js')}}"></script>
-  @stack('js')
+ 
 
   <!-- Page Specific JS File -->
+   @stack('js')

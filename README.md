@@ -111,3 +111,22 @@ public function dehydrate()
         }
     }
 ```
+# Select
+## JQuery Selectric
+Code pemanggilan selectric jquery
+```php
+@component('components.input.select')
+  @slot('category', 'selectric')
+  @slot('multiple', false)
+  @slot('formclass', 'form-group col-6')
+  @slot('label', 'country')
+  @slot('name', 'country')
+  @slot('options')
+    <option>Indonesia</option>
+    <option>Palestine</option>
+    <option>Syria</option>
+    <option>Malaysia</option>
+    <option>Thailand</option>
+  @endslot
+@endcomponent
+```
